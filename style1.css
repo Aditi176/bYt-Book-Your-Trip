@@ -1,0 +1,339 @@
+*{
+	user-select: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+
+body{
+
+	background: linear-gradient(to bottom, darkblue,purple,darkblue,purple,darkblue,purple);
+	height: 100%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	text-align: justify;
+
+
+}
+
+.logo{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.wholebody{
+	text-align: justify;
+	margin-top: 20px;
+	padding: 10px;
+
+}
+
+/*For desktop version nav bar*/
+.container nav.desktop,
+.container div.mobile{
+	width: 100%;
+	background-color:gainsboro;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+nav.desktop ul{
+	list-style: none;
+	width: 110%;
+	height: 60px;
+	margin: 0 auto;
+}
+
+nav.desktop ul li{
+	width: 15.3%;
+	float: left;
+	text-align: center;
+	line-height: 70px;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	font-size: 20px;
+}
+
+
+nav.desktop ul li:hover,
+div.mobile ul li:hover{
+	background-color: lightslategrey;
+	
+}
+
+nav.desktop ul li.active,
+div.mobile ul li.active{
+	background-color: slategrey;
+}
+
+nav ul li a,
+div ul li a
+{
+	text-decoration: none;
+	color: black;
+}
+nav ul li a:hover,
+div ul li a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+div.mobile{
+	display: none;
+}
+
+
+
+/*For mobile version nav bar*/
+
+.logo{
+	margin-top: -2px;
+	margin-right: auto;
+	padding: 6px 15px;
+	font-size: 28px;
+	font-weight: bold;
+	font-family: "roboto slab";
+	background-color: #A6BBC3FF;
+	display: flex;
+	justify-content: center;
+}
+
+#toggle
+{
+	display: none;
+}
+
+.togglearea{
+	background-color: gainsboro;
+	color: black;
+	height: 46px;
+	padding: 10px;
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+.togglearea label{
+	background-color: white;
+	height: 45px;
+	width: 50px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+.togglearea label span{
+	background-color: darkslategrey;
+	border-radius: 2px;
+	height: 2px;
+	width: 60%;
+	margin: 2px 0px;
+	padding: 2px 0px;
+
+}
+
+@media screen and  (max-width: 700px){
+	
+	nav.desktop{
+		display: none;
+	}
+
+	.wholebody{
+		text-align: justify;
+
+	}
+	div.mobile{
+		
+		display: flex;
+		flex-direction: column;		
+	}
+	
+	input[type=checkbox]:checked + .mobile{
+		display: none;
+		position: fixed;
+
+	}
+	.mobile ul{
+		background-color: gainsboro;
+		margin-top: 0px;
+		
+	}
+	.mobile li{
+		text-transform: uppercase;
+		text-align: center;
+		padding: 15px;
+	}
+	
+}
+
+
+
+
+
+.adventure{
+	font-size: 80px;
+	color: white;
+	font-family: 'Turret Road', 'Lobster';
+}
+.head{
+	
+	font-weight: bold;
+	font-family: georgia, forte, "Times New Roman";
+	font-size: 30px;
+	border-radius: 5px;
+	padding: 0px;
+	text-align: center;
+
+
+}
+
+h1.h1tag{
+	text-align: center;
+	background-image: linear-gradient(to right, lavender,slategrey, transparent 90%);
+	font-family: "roboto mono", monospace;
+	text-transform: uppercase;
+	text-shadow: 2px 3px 30px white;
+
+}
+h2{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 50px; 
+}
+p.about, 
+.plan,
+.footercls{
+	color: white;
+	font-size: 20px;
+	margin: 10px;
+	font-family: 'Roboto Mono', monospace;
+}
+.signature{
+	color: white;
+	font-size: 20px;
+	margin: 15px;
+	font-family: 'roboto mono';
+}
+.para{
+	
+	text-align: center;
+	
+}
+.register,
+.book{
+
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	background-color: mediumspringgreen;
+	border-color: white;
+	border-radius: 5px;
+	padding: 5px;
+
+	
+}
+h3{
+	color: black;
+}
+h3:hover{
+	color: white;
+}
+button:hover{
+	background-color: blue;
+}
+h4{
+	text-transform: none;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: 'Ubuntu', sans-serif;
+
+}
+
+.aclass{
+	color: white;
+}
+
+.galleryimg{
+	padding: 0px;
+	margin: 0px; 
+}
+
+img{
+	padding: 3px;
+}
+
+.galleryimg img:hover{
+	transform: scale(1.05);
+	transition: all 0.8s;
+	cursor: pointer;
+}
+
+.faqs{
+	padding: 10px;
+	text-align: left;
+	background-image: linear-gradient(to bottom right, white, plum);
+	border-radius: 5px;
+}
+
+details{
+	background-color: lightgrey;
+	padding: 8px 8px 8px 10px;
+	border-radius: 6px;
+	margin: 5px 0px;
+	font-family: 'roboto';
+	cursor: pointer;
+
+}
+summary:focus{
+	background-color: cadetblue;
+
+}
+
+.p1{
+	font-size: 25px;
+	font-family: "calibri";
+	padding: 8px;
+	background-color: whitesmoke;
+
+	
+}
+
+a{
+	text-decoration: none;
+	padding: 0px;
+}
+
+.up{
+	float: right;
+	width: 50px;
+	background: white;
+	position: fixed;
+	top: 90%;
+	right: 2%;
+	font-size: 35px;
+	font-weight: bold;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	
+}
+
+.up:hover{
+	cursor: pointer;
+}
+
+
+footer{
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+}

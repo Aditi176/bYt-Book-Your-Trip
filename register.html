@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+	<div class="cover">
+		<img src="registerback1.jfif" alt="" class="registerimg">
+	</div>
+	<h1>Register To Book A Trip</h1>
+	
+	<div class="bookbox">
+		<form class="form">
+			<label for="name" class="labels">Name</label>
+			<div class="inputs">
+				<input type="text" name="name" placeholder="Full Name" required>&nbsp&nbsp
+			</div>
+			
+			
+
+			<br><br>
+			<label for="Gender" class="labels">Gender</label>
+			<div class="inputs">
+				<input type="radio" name="Gender" value="Male"> Male &nbsp&nbsp  
+				<input type="radio" name="Gender" value="Female"> Female &nbsp&nbsp
+				<input type="radio" name="Gender" value="Others"> Others &nbsp&nbsp<br>
+				
+			</div>
+			
+
+			<br><br>
+			<label for="email" class="labels">Email ID</label>
+			<div class="inputs">
+				<input type="email" name="email" placeholder="ex: abc123@example.com" required><br>
+			</div>
+			
+
+			<br><br>
+			<label for="number" class="labels">Mobile</label>
+			<div class="inputs">
+				<input type="text" name="number" placeholder="10 digit Mobile number" pattern="^[0,7,9,6][0-9]{9}$" required><br>
+			</div>
+			
+
+			<br><br>
+			<label for="date" class="labels">DOB</label>
+			<div class="inputs">
+				<input type="date" name="date" required><br>
+			</div>
+			
+
+			<br><br>
+			<label for="language" class="labels">Preferred language</label> 
+			<div class="inputs">
+				<select name="language" id="" class="selects">
+					<option value="English">English</option>
+					<option value="Hindi">Hindi</option>
+					<option value="Bengali">Bengali</option>
+				</select>
+				<br>
+			</div>
+			
+
+			<br><br>
+			<label for="newpassword" class="labels">New Password</label>
+			<div class="inputs">
+				<input type="password" name="newpassword" placeholder="Enter password" minLength="8" required><br>
+			</div>
+			
+
+			<br><br>
+			<label for="confirmpassword" class="labels">Confirm Password</label>
+			<div class="inputs">
+				<input type="password" name="confirmpassword" placeholder="Enter same password" minLength="8" required><br>
+			</div>
+			
+
+			<br><br>
+			<div class="inputs1">
+				<input class="submitbtn" type="submit" name="register" value="REGISTER">&nbsp 
+				<input class="resetbtn" type="reset" name="reset" value="RESET">
+			</div>
+
+		</form>
+	</div>
+
+	<br>
+	<button class="back">
+		<a href="index.html">Back</a>
+	</button>
+</body>
+</html>
